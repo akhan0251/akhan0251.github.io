@@ -1,5 +1,7 @@
 site_name: Ali
-
+# Repository
+repo_name: akhan0251
+repo_url: https://github.com/akhan0251/mkdocs-material
 theme:
   name: material
   icon:
@@ -26,7 +28,7 @@ theme:
       toggle:
         icon: material/brightness-5
         name: Switch to light mode    
-      primary: blue
+      primary: indigo
       accent: lime
 
 plugins:
