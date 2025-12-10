@@ -1,1 +1,8 @@
+.cache/
+.DS_Store
+__pycache__/
+*.pyc
+site/
+.env
+.env.*
 .venv/
