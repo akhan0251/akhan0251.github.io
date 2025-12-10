@@ -1,0 +1,65 @@
+site_name: Ali Khan
+# Repository
+repo_name: akhan0251
+repo_url: https://github.com/akhan0251/mkdocs-material
+theme:
+  name: material
+  icon:
+    logo: material/lightbulb-on-outline
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Dark mode
+      primary: teal
+      accent: green
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Light mode
+      primary: black
+      accent: green
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/akhan0251
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ali-khan1/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+extra_css:
+  - styles/theme.css
+
+nav:
+  - Home: index.md
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/akhan0251" target="_blank" rel="noopener">Ali Khan</a>
