@@ -1,7 +1,7 @@
 site_name: Ali Khan
 # Repository
 repo_name: akhan0251
-repo_url: https://github.com/akhan0251/mkdocs-material
+repo_url: https://github.com/akhan0251/akhan0251.github.io
 theme:
   name: material
   icon:
@@ -37,7 +37,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/akhan0251
+      link: https://github.com/akhan0251/akhan0251.github.io
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ali-khan1/
 
@@ -60,6 +60,8 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Projects: projects.md
+  - Simulator: ie-toolkit.md
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/akhan0251" target="_blank" rel="noopener">Ali Khan</a>
+  &copy; 2023 <a href="https://github.com/akhan0251/akhan0251.github.io" target="_blank" rel="noopener">Ali Khan</a>

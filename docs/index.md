@@ -2,12 +2,12 @@
   <header class="hero-card">
     <p class="nameplate">Ali Khan</p>
     <p class="kicker">AI Product Strategy | Machine Learning • Data Science • Industrial Engineering</p>
-    <h1>Product manager turning complexity into clarity.</h1>
-    <p class="lede type-target" data-typing-target data-fulltext="I bridge customer insight with simple, effective tools, staying results-focused and creative so teams stay aligned and provide better customer experiences.">I bridge customer insight with simple, effective tools, staying results-focused and creative so teams stay aligned and provide better customer experiences.</p>
+    <h1>Building practical tools at the intersection of AI, operations, and product.</h1>
+    <p class="lede type-target" data-typing-target data-fulltext="I turn ambiguous operational problems into usable products, blending customer insight, data science, simulation, and hands-on prototyping to help teams make clearer decisions.">I turn ambiguous operational problems into usable products, blending customer insight, data science, simulation, and hands-on prototyping to help teams make clearer decisions.</p>
     <div class="hero-actions">
       <a class="button primary" href="https://www.linkedin.com/in/ali-khan1/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="button ghost" href="https://github.com/akhan0251" target="_blank" rel="noopener">GitHub</a>
-      <button class="button ghost" type="button" data-typing-replay>Animate line</button>
+      <a class="button ghost" href="https://github.com/akhan0251/akhan0251.github.io" target="_blank" rel="noopener">GitHub</a>
+      <a class="button ghost" href="projects/">Projects</a>
     </div>
   </header>
 </div>
@@ -15,7 +15,6 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const target = document.querySelector("[data-typing-target]");
-    const replayBtn = document.querySelector("[data-typing-replay]");
     if (!target) return;
 
     const fullText = target.dataset.fulltext || target.textContent.trim();
@@ -38,6 +37,5 @@
     };
 
     runTyping();
-    if (replayBtn) replayBtn.addEventListener("click", runTyping);
   });
 </script>

@@ -49,7 +49,7 @@ body {
 }
 
 .md-grid {
-  max-width: 960px;
+  max-width: 1280px;
 }
 
 .md-header__title {
@@ -65,7 +65,7 @@ body {
 }
 
 .md-tabs {
-  display: none;
+  display: block;
 }
 
 .md-header__title,
@@ -129,8 +129,8 @@ p.nameplate {
 .hero-card {
   background: var(--card-bg);
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1.75rem;
+  border-radius: 8px;
+  padding: clamp(1.5rem, 4vw, 3rem);
   box-shadow: var(--shadow);
 }
 
@@ -190,7 +190,7 @@ p.nameplate {
   align-items: center;
   gap: 0.35rem;
   padding: 0.65rem 1.1rem;
-  border-radius: 999px;
+  border-radius: 8px;
   border: 1px solid var(--line);
   font-weight: 700;
   color: var(--ink);
@@ -216,21 +216,33 @@ p.nameplate {
   background: transparent;
 }
 
-.simple-grid {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.card {
+.project-card {
   background: var(--card-bg);
   border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1.15rem;
+  border-radius: 8px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 100%;
+  padding: 1.25rem;
 }
 
-.card p,
-.card li {
+.project-card h2 {
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.project-card p {
   color: var(--muted);
+}
+
+.project-card .hero-actions {
+  margin-top: auto;
 }
