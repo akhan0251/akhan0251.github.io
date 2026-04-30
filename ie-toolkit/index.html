@@ -1,0 +1,993 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../projects/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Simulator - Ali Khan</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../styles/theme.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Ali Khan" class="md-header__button md-logo" aria-label="Ali Khan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11h3v2h-3zM1 11h3v2H1zM13 1v3h-2V1zM4.92 3.5l2.13 2.14-1.42 1.41L3.5 4.93zm12.03 2.13 2.12-2.13 1.43 1.43-2.13 2.12zM12 6a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V19a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6 6 0 0 1 6-6m2 15v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1zm-3-3h2v-2.13c1.73-.44 3-2.01 3-3.87a4 4 0 0 0-4-4 4 4 0 0 0-4 4c0 1.86 1.27 3.43 3 3.87z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ali Khan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simulator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="green"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/akhan0251/akhan0251.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    akhan0251
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../projects/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Simulator
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Ali Khan" class="md-nav__button md-logo" aria-label="Ali Khan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11h3v2h-3zM1 11h3v2H1zM13 1v3h-2V1zM4.92 3.5l2.13 2.14-1.42 1.41L3.5 4.93zm12.03 2.13 2.12-2.13 1.43 1.43-2.13 2.12zM12 6a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V19a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6 6 0 0 1 6-6m2 15v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1zm-3-3h2v-2.13c1.73-.44 3-2.01 3-3.87a4 4 0 0 0-4-4 4 4 0 0 0-4 4c0 1.86 1.27 3.43 3 3.87z"/></svg>
+
+    </a>
+    Ali Khan
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/akhan0251/akhan0251.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    akhan0251
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Simulator</h1>
+
+<p><link rel="stylesheet" href="../ie-toolkit-app/embedded.css"></p>
+<div class="ie-toolkit-page" data-ie-toolkit-root="../ie-toolkit-app/">
+<nav class="tab-list" aria-label="Primary sections">
+  <button class="tab-button active" type="button" data-tab-target="simulator-tab" aria-selected="true">Simulator</button>
+  <button class="tab-button" type="button" data-tab-target="helper-tab" aria-selected="false">Input Helper</button>
+  <button class="tab-button" type="button" data-tab-target="dataset-tab" aria-selected="false">Dataset Guide</button>
+  <button class="tab-button" type="button" data-tab-target="guide-tab" aria-selected="false">Simulation Guide</button>
+</nav>
+
+<main class="main-content">
+  <section id="dataset-tab" class="tab-panel guide-panel" hidden>
+    <article class="panel">
+      <div class="section-heading">
+        <p class="eyebrow">Dataset guide</p>
+        <h2>MIT-licensed 911 calls sample</h2>
+      </div>
+
+      <div class="guide-content">
+        <p class="guide-lede">
+          The file <strong>test_911_calls_mit_sample.csv</strong> is a simulator-ready teaching sample based on the structure of
+          the MIT-licensed Vera 911 calls-for-service project from Two Sigma Data Clinic and the Vera Institute of Justice.
+          It keeps the simulator-required fields simple: one row per call, an arrival time, and a service-time proxy.
+        </p>
+
+        <div class="dataset-summary">
+          <div class="guide-section">
+            <h3>What it represents</h3>
+            <p>
+              Each row is one call entering a response queue. Arrival times are minutes from the start of the sampled window,
+              and service times use response/handling time as the processing-time proxy for the simulation.
+            </p>
+          </div>
+          <div class="guide-section">
+            <h3>How to use it</h3>
+            <p>
+              Open Input Helper, click <strong>Load Sample Data</strong>, then review the automatic
+              <strong>arrival_time</strong> and <strong>service_time</strong> analysis. The helper derives interarrival times
+              from arrival times.
+            </p>
+          </div>
+          <div class="guide-section">
+            <h3>Important limitation</h3>
+            <p>
+              This is not the full Vera dataset. It is a compact local sample shaped for this simulator so users can test the
+              CSV workflow without downloading a large external file.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div>
+            <h3>entity_id</h3>
+            <p>A unique call number for the sample.</p>
+          </div>
+          <div>
+            <h3>arrival_time</h3>
+            <p>Elapsed minutes from the start of the sampled call-center window.</p>
+          </div>
+          <div>
+            <h3>service_time</h3>
+            <p>Call handling time in minutes, used as the simulator service-time input.</p>
+          </div>
+          <div>
+            <h3>call_type</h3>
+            <p>Call source/type label. The sample uses 911 calls because the Vera project focuses on calls for service.</p>
+          </div>
+          <div>
+            <h3>source_city</h3>
+            <p>The city label from the multi-city 911 calls-for-service project.</p>
+          </div>
+          <div>
+            <h3>source_dataset</h3>
+            <p>A label identifying the MIT-licensed Vera project used for this sample structure.</p>
+          </div>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Where this data comes from</h3>
+          <p>
+            The source project describes a consolidated 911 response dataset for New Orleans, Seattle, Dallas, Detroit, and Charleston.
+            The project README links to downloadable CSV files for the combined dataset and each city.
+          </p>
+          <div class="link-button-row">
+            <a class="link-button" href="https://github.com/tsdataclinic/Vera" target="_blank" rel="noreferrer">Open Dataset</a>
+          </div>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Attribution and use</h3>
+          <p>
+            The Vera repository is published under the MIT License. Keep the original project attribution if you reuse this sample
+            or replace it with the full source data.
+          </p>
+          <div class="link-button-row">
+            <a class="link-button secondary-link-button" href="https://github.com/tsdataclinic/Vera/blob/master/LICENSE" target="_blank" rel="noreferrer">View MIT License</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="guide-tab" class="tab-panel guide-panel" hidden>
+    <article class="panel">
+      <div class="section-heading">
+        <p class="eyebrow">Simulation guide</p>
+        <h2>What a discrete-event simulation is</h2>
+      </div>
+
+      <div class="guide-content">
+        <p class="guide-lede">
+          Discrete-event simulation models a system as timed events: arrivals, service starts, departures, and balks.
+          It helps you test operational changes before changing the real process.
+        </p>
+
+        <div class="guide-summary">
+          <div class="guide-section">
+            <h3>Why it matters</h3>
+            <p>
+              Averages hide queues, peaks, and overload. Simulation shows how the system behaves over time,
+              especially when demand arrives unevenly or service times vary. It helps reveal bottlenecks before
+              they become real customer delays.
+            </p>
+          </div>
+          <div class="guide-section">
+            <h3>Value</h3>
+            <p>
+              Compare staffing, capacity, cost, wait time, utilization, lost demand, and service levels safely.
+              You can test "what if" scenarios without disrupting production, customers, or employees.
+            </p>
+          </div>
+          <div class="guide-section">
+            <h3>What you need</h3>
+            <p>
+              Define the process, entities, arrivals, service times, resources, queue rule, capacity, and targets.
+              Start with estimates if needed, then improve the model as better data becomes available.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div>
+            <h3>Entities</h3>
+            <p>The jobs, calls, parts, customers, or tickets moving through the system.</p>
+          </div>
+          <div>
+            <h3>Arrivals</h3>
+            <p>How often new entities enter the system. Shorter interarrival times create more workload pressure.</p>
+          </div>
+          <div>
+            <h3>Servers</h3>
+            <p>The people, machines, workstations, or resources that process entities.</p>
+          </div>
+          <div>
+            <h3>Service time</h3>
+            <p>How long processing takes once an entity reaches a server.</p>
+          </div>
+          <div>
+            <h3>Queue rule</h3>
+            <p>The dispatching rule used when a server becomes available, such as FIFO, LIFO, SPT, LPT, or random.</p>
+          </div>
+          <div>
+            <h3>Grade of service</h3>
+            <p>The percent of completed entities handled within target wait times, such as 10, 20, or 30 minutes.</p>
+          </div>
+          <div>
+            <h3>Replications</h3>
+            <p>
+              Repeated full-day runs with different random seeds. Use one replication to inspect one seeded scenario,
+              or many replications to estimate confidence intervals and percentile outcomes. Replication controls appear
+              when the model uses stochastic arrivals, stochastic service, or random queue selection.
+            </p>
+          </div>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Practical first model</h3>
+          <p>Start simple: one server, FIFO queue, deterministic arrivals, and deterministic service. Then change one setting at a time.</p>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Using the live simulator</h3>
+          <p>
+            Configure arrivals, service behavior, server capacity, and queue rules, then watch the flow and review the event log.
+            Drag boxes on the canvas grid to arrange the view.
+          </p>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Recommendations and replications</h3>
+          <p>
+            Standard capacity guidance is based on the current random seed and scenario inputs. Running replications also shows a
+            stochastic recommendation: the smallest server count where at least 90% of replications meet the 80% GOS target.
+          </p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="helper-tab" class="tab-panel helper-panel" hidden>
+    <article class="panel helper-setup-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Input helper</p>
+        <h2>Estimate arrival and service patterns</h2>
+      </div>
+
+      <p class="guide-lede">
+        Upload a CSV or load the MIT-licensed 911 calls teaching sample to estimate arrival pattern,
+        interarrival time, service pattern, mean service time, and service-time variation.
+      </p>
+
+      <div class="csv-import">
+        <label>
+          CSV file
+          <input id="csv-file" type="file" accept=".csv,text/csv" title="Load a CSV with arrival and service-time columns." />
+          <span class="field-hint">Choose a file, or use the sample data button.</span>
+        </label>
+
+        <label>
+          Arrival column
+          <select id="csv-arrival-column" title="Column containing arrival times or interarrival times.">
+            <option value="">Load CSV first</option>
+          </select>
+          <span class="field-hint">Use `arrival_time`; the app derives interarrival time.</span>
+        </label>
+
+        <label>
+          Service column
+          <select id="csv-service-column" title="Column containing observed service times.">
+            <option value="">Load CSV first</option>
+          </select>
+          <span class="field-hint">Observed processing times.</span>
+        </label>
+
+        <button id="load-sample-csv" class="secondary-button" type="button" title="Load the included MIT-licensed 911 calls sample for testing.">Load Sample Data</button>
+        <button id="analyze-patterns" class="secondary-button" type="button" title="Analyze the selected CSV columns.">Analyze CSV</button>
+        <button id="apply-patterns" class="secondary-button" type="button" title="Apply the latest recommendations to the simulator inputs.">Apply to Simulator</button>
+      </div>
+
+      <details class="sample-csv">
+        <summary>Sample CSV format</summary>
+        <div class="sample-csv-body">
+          <div>
+            <h3>Expected columns</h3>
+            <p>Use a header row. `entity_id` is optional; the app detects `arrival_time` and `service_time`, then derives interarrival time.</p>
+          </div>
+          <pre><code>entity_id,arrival_time,service_time
+1,0.0,2.1
+2,1.4,1.8
+3,3.1,2.4
+4,4.5,2.0
+5,6.0,2.2</code></pre>
+        </div>
+      </details>
+    </article>
+
+    <section class="helper-workspace">
+
+      <article class="panel helper-results-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Analysis</p>
+          <h2>Fit results</h2>
+        </div>
+        <div id="pattern-helper-results" class="helper-results">
+          <div class="helper-card helper-empty-state">
+            <h3>No CSV analyzed yet</h3>
+            <p>Load sample data or upload a CSV. The app detects `arrival_time` and `service_time`, then derives interarrival time.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
+
+  <section id="simulator-tab" class="tab-panel app-shell">
+  <aside class="panel controls-panel" aria-label="Simulation controls">
+    <div class="section-heading">
+      <p class="eyebrow">Scenario</p>
+      <h2>Inputs</h2>
+    </div>
+
+    <div class="control-grid">
+      <label>
+        Max entities
+        <input id="entity-count" type="number" min="1" max="2000" value="500" title="Maximum number of jobs, calls, parts, customers, or other entities to generate during the 8 AM-5 PM simulated day." />
+        <span class="field-hint">Upper limit for the full workday.</span>
+      </label>
+
+      <label>
+        Servers
+        <input id="server-count" type="number" min="1" max="50" value="1" title="Number of parallel servers or resources available to process entities." />
+        <span class="field-hint">Parallel processing capacity.</span>
+      </label>
+
+      <label>
+        Queue capacity
+        <input id="queue-capacity" type="number" min="0" max="50" value="20" title="Maximum number of entities allowed to wait. Arrivals are balked when the queue is full and all servers are busy." />
+        <span class="field-hint">Waiting spots before balking.</span>
+      </label>
+
+      <label>
+        Queue type
+        <select id="queue-type" title="Select how waiting entities are chosen when a server becomes available.">
+          <option value="fifo">FIFO - first in, first out</option>
+          <option value="lifo">LIFO - last in, first out</option>
+          <option value="spt">SPT - shortest processing time</option>
+          <option value="lpt">LPT - longest processing time</option>
+          <option value="random">Random selection</option>
+        </select>
+        <span class="field-hint">Dispatch rule for waiting work.</span>
+      </label>
+
+      <label>
+        Arrival pattern
+        <select id="arrival-distribution" title="Choose the distribution used to generate time between arrivals.">
+          <option value="deterministic">Deterministic</option>
+          <option value="exponential">Exponential</option>
+          <option value="normal">Normal</option>
+          <option value="lognormal">Lognormal</option>
+          <option value="uniform">Uniform</option>
+          <option value="poisson-rate">Poisson rate</option>
+          <option value="time-varying-rate">Time-varying rate</option>
+        </select>
+        <span class="field-hint">Distribution for demand entering the system.</span>
+      </label>
+
+      <label id="interarrival-time-field">
+        Mean interarrival
+        <input id="interarrival-time" type="number" min="0.1" step="0.1" value="1.4" title="Average time between new entity arrivals. Smaller values create more queue pressure." />
+        <span id="interarrival-time-hint" class="field-hint">Average time between arrivals.</span>
+      </label>
+
+      <label id="arrival-stddev-field" hidden>
+        Arrival standard deviation
+        <input id="arrival-stddev" type="number" min="0.1" step="0.1" value="0.4" title="Standard deviation for normal, lognormal, and uniform interarrival times." />
+        <span class="field-hint">Used for normal, lognormal, and uniform arrivals.</span>
+      </label>
+
+      <label id="arrival-rate-field" hidden>
+        Arrival rate
+        <input id="arrival-rate" type="number" min="0.1" step="0.1" value="30" title="Average arrivals per hour for the Poisson arrival-rate pattern." />
+        <span class="field-hint">Calls per hour.</span>
+      </label>
+
+      <label id="arrival-rate-schedule-field" hidden>
+        Arrival rate schedule
+        <input id="arrival-rate-schedule" type="text" value="0-180:18,180-300:54,300-420:30,420-540:15" title="Time-varying rate schedule across the 8 AM to 5 PM day. Format: start-end:rate per hour, for example 0-180:18,180-300:54." />
+        <span class="field-hint">Minutes after 8 AM. Example: 180-300 is 11 AM-1 PM.</span>
+      </label>
+
+      <label>
+        Service pattern
+        <select id="service-distribution" title="Choose the distribution used to generate service times.">
+          <option value="deterministic">Deterministic</option>
+          <option value="exponential">Exponential</option>
+          <option value="normal">Normal</option>
+          <option value="lognormal">Lognormal</option>
+          <option value="uniform">Uniform</option>
+        </select>
+        <span class="field-hint">Distribution for processing time.</span>
+      </label>
+
+      <label id="service-time-field">
+        Mean service time
+        <input id="service-time" type="number" min="0.1" step="0.1" value="2" title="Average time required for a server to process one entity." />
+        <span id="service-time-hint" class="field-hint">Average processing time.</span>
+      </label>
+
+      <label id="service-stddev-field" hidden>
+        Service standard deviation
+        <input id="service-stddev" type="number" min="0.1" step="0.1" value="0.4" title="Standard deviation for normal, lognormal, and uniform service times." />
+        <span class="field-hint">Used for normal, lognormal, and uniform service.</span>
+      </label>
+
+      <label>
+        Random seed
+        <input id="sim-seed" type="number" min="1" step="1" value="42" title="Seed for repeatable random arrivals and service times." />
+        <span class="field-hint">Repeatable random runs.</span>
+      </label>
+    </div>
+  </aside>
+
+  <section class="workspace">
+    <article class="panel canvas-panel">
+      <div class="section-heading row-heading">
+        <div>
+          <p class="eyebrow">Live view</p>
+          <h2>Simulation canvas</h2>
+        </div>
+        <p class="canvas-note">Simulates an 8 AM-5 PM day. Hover for details. Drag boxes to move them.</p>
+      </div>
+
+      <div class="simulation-actions" aria-label="Simulation actions">
+        <button id="run-simulation" type="button" title="Build the current scenario and start the animation from the beginning.">Run</button>
+        <button id="run-full-day" type="button" title="Build the current scenario and jump directly to the 5 PM end-of-day view.">Run Full Day</button>
+        <button id="run-replications" class="secondary-button" type="button" data-replication-control hidden title="Run the current scenario one or more times with sequential random seeds and summarize stochastic variation.">Run Replications</button>
+        <button id="stop-simulation" class="secondary-button" type="button" title="Pause the current simulation animation at its current position.">Stop</button>
+        <button id="reset-simulation" class="secondary-button" type="button" title="Stop the animation and redraw the current scenario at simulation time zero.">Reset</button>
+        <button id="reorganize-canvas" class="secondary-button" type="button" title="Reorganize the simulation diagram based on the current server count.">Reorganize Canvas</button>
+        <label class="replication-control" data-replication-control hidden>
+          Replications
+          <input id="replication-count" type="number" min="1" max="500" step="1" value="1" title="Number of independent full-day simulation runs. Use 1 for one seeded run, or increase it to estimate stochastic uncertainty." />
+        </label>
+        <label class="speed-control">
+          Animation speed
+          <input id="sim-speed" type="range" min="0.5" max="5" step="0.5" value="2" title="Controls how fast the simulation animation plays. This does not change the simulated results." />
+        </label>
+      </div>
+
+      <div class="canvas-wrap">
+        <div id="flow-canvas" class="flow-canvas" aria-label="Discrete-event simulation flow diagram"></div>
+        <div id="flow-tooltip" class="flow-tooltip" role="status" hidden></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="section-heading">
+        <p class="eyebrow">Recommendations</p>
+        <h2>Capacity guidance</h2>
+      </div>
+      <div id="simulation-recommendations" class="recommendation-grid"></div>
+    </article>
+
+    <article class="panel">
+      <div class="section-heading">
+        <p class="eyebrow">Results</p>
+        <h2>Metrics</h2>
+      </div>
+      <div id="simulation-results" class="metric-grid"></div>
+      <div id="replication-results" class="replication-results" hidden></div>
+    </article>
+
+    <article class="panel">
+      <div class="section-heading">
+        <p class="eyebrow">Trace</p>
+        <h2>Event log</h2>
+      </div>
+      <div class="event-log-wrap">
+        <table class="event-log">
+          <thead>
+            <tr>
+              <th>Entity</th>
+              <th>Arrival time</th>
+              <th>Server</th>
+              <th>Service start</th>
+              <th>Departure</th>
+              <th>Wait</th>
+              <th>Grade of Service</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="simulation-log"></tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <p>All simulation calculations run locally in the browser.</p>
+  </footer>
+</div>
+
+<script>
+  window.IETOOLKIT_ASSET_BASE = "../ie-toolkit-app/";
+</script>
+<script src="../ie-toolkit-app/app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="https://github.com/akhan0251/akhan0251.github.io" target="_blank" rel="noopener">Ali Khan</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/akhan0251/akhan0251.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/ali-khan1/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

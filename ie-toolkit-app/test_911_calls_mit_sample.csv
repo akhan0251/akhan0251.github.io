@@ -1,0 +1,49 @@
+entity_id,arrival_time,service_time,source_city,call_type,source_dataset
+1,0.0,6.4,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+2,1.6,4.8,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+3,3.2,7.1,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+4,5.9,5.3,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+5,8.1,8.5,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+6,9.4,4.6,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+7,12.7,9.2,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+8,14.0,5.1,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+9,15.2,6.7,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+10,18.6,10.4,Seattle,911,tsdataclinic_Vera_MIT_derived_sample
+11,21.0,4.9,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+12,21.9,6.1,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+13,23.8,5.8,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+14,25.5,11.3,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+15,27.4,7.6,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+16,29.8,4.2,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+17,31.1,6.9,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+18,32.6,8.8,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+19,35.9,5.4,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+20,38.0,12.0,Dallas,911,tsdataclinic_Vera_MIT_derived_sample
+21,39.5,5.7,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+22,40.7,7.4,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+23,43.3,9.8,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+24,44.0,4.4,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+25,45.8,6.5,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+26,48.1,8.1,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+27,49.9,5.2,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+28,52.6,13.6,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+29,54.2,6.2,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+30,57.8,7.9,New Orleans,911,tsdataclinic_Vera_MIT_derived_sample
+31,58.6,4.7,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+32,60.3,6.8,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+33,61.0,9.5,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+34,63.4,5.6,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+35,66.2,10.8,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+36,68.0,7.2,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+37,69.1,5.0,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+38,72.5,12.7,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+39,74.9,6.0,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+40,76.2,8.4,Detroit,911,tsdataclinic_Vera_MIT_derived_sample
+41,78.8,5.5,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+42,80.0,6.3,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+43,81.7,7.8,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+44,84.6,4.9,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+45,86.1,9.1,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+46,87.0,6.6,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+47,89.4,11.5,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
+48,92.8,5.8,Charleston,911,tsdataclinic_Vera_MIT_derived_sample
